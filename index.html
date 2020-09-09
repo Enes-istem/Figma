@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Modak&display=swap"
+      rel="stylesheet"
+    />
+    <title>Figma</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+      @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+      
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(./images/alesia-kazantceva-XLm6-fPwK5Q-unsplash\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.main-container section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(150,145, 145, 0.79);
+    background-size: cover;    
+}
+header {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    /* background-color: red; */
+    border-bottom: 1px solid white;
+}
+.top-right span {
+    display: block;
+    float: right;
+    color: white;
+    margin: 25px;
+    padding-left: 10px;
+    /* padding-right: 5px; */
+    
+}
+#span1 {
+    
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+#span2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-shrink: 4;
+   
+}
+
+#p1{
+    display: inline-block;
+    color: white;
+    font-family: 'Modak', cursive;
+    font-style: normal;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 10vh;
+   
+
+
+}
+
+/* footer {
+    display: flex;
+} */
+
+footer.footer1 {
+    display: flex;
+}
+
+div.rectangle {
+    display: inline-block;
+    position: absolute;
+    top: 55.5%;
+    right: 29%;
+    width: 300px;
+    height: 140px;
+   
+    margin: 2px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.rectangle ul li {
+    display: list-item;
+    list-style-type: circle;
+    list-style-position: inside;
+    display: list-item;
+    flex-direction: column;
+    margin: 2px;
+    padding-left: 5px;
+    color: #460807;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+   
+}
+
+@media only screen and (max-width:480px) {
+    #p1{
+        display: block;
+        position: absolute;
+        top: 30%;
+        
+        color: white;
+        font-family: 'Modak', cursive;
+        font-style: normal;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 10vh;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    div.rectangle {
+        display: inline-block;
+        position: absolute;
+        top: 40%;
+        right: 8%;
+        width: 200px;
+        height: 80px;
+   
+        /* margin: 2px; */
+        background: #FFFFFF;
+        border: 1px solid #000000;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 12px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .rectangle ul li {
+        display: list-item;
+        list-style-type: circle;
+        list-style-position: inside;
+        display: list-item;
+        flex-direction: column;
+        margin: 2px;
+        padding-top: 3px;
+        padding-left: 5px;
+        color: #460807;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        font-style: normal; 
+    }
+}  
+
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <section>
+        <header>
+          <nav id="nav1">
+            <p class="top-right">
+              <span id="span1">Register</span><span id="span2">Login</span>
+            </p>
+          </nav>
+        </header>
+        <article>
+          <p id="p1">JOIN OUR BEST CLUB</p>
+        </article>
+        <footer class="footer1">
+          <div class="rectangle">
+            <ul>
+              <li><span>Best experience</span></li>
+              <li><span>Good opportunities</span></li>
+              <li><span>Valuable fellowship</span></li>
+            </ul>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
